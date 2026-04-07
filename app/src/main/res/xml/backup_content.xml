@@ -17,8 +17,8 @@
         path="." />
     <include
         domain="sharedpref"
-        path="org.jellyfin.mobile_preferences" />
+        path="org.dzair.mobile_preferences" />
     <include
         domain="sharedpref"
-        path="org.jellyfin.mobile.debug_preferences" />
+        path="org.dzair.mobile.debug_preferences" />
 </full-backup-content>

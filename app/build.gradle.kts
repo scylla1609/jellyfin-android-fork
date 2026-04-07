@@ -28,7 +28,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.jellyfin.mobile"
+    namespace = "org.dzair.mobile"
     compileSdk = 36
 
     defaultConfig {
@@ -56,7 +56,7 @@ android {
             aaptOptions.cruncherEnabled = false
 
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = releaseSigningConfig
+            signingConfig = signingConfigs.getByName("debug")
         }
         getByName("debug") {
             applicationIdSuffix = ".debug"
@@ -108,7 +108,7 @@ android {
     }
 }
 
-base.archivesName.set("jellyfin-android-v${project.getVersionName()}")
+base.archivesName.set("dzair-android-v${project.getVersionName()}")
 
 dependencies {
     val proprietaryImplementation by configurations
